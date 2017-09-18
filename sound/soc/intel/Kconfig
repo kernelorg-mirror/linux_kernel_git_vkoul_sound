@@ -54,6 +54,13 @@ config SND_SST_ATOM_HIFI2_PLATFORM
 	depends on SND_SOC_INTEL_SST_TOPLEVEL && X86
 	select SND_SOC_COMPRESS
 
+config SND_SOC_INTEL_SKYLAKE_SSP_CLK
+	tristate
+	help
+	   Enabling this will make the clk driver to be compiled and allow to
+	   control MCLK/SCLK/FS clocks independent of the stream. It should be
+	   enabled by the respective machine driver.
+
 config SND_SOC_INTEL_SKYLAKE
 	tristate "Intel ASoC SST driver for SKL/BXT/KBL/GLK/CNL"
 	depends on SND_SOC_INTEL_SST_TOPLEVEL && PCI && ACPI
