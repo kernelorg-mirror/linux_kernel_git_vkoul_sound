@@ -1,16 +1,4 @@
-config SND_SOC_INTEL_MACH
-	bool "Intel ASoC machine drivers"
-	default y
-	help
-	  Intel ASoC Machine Drivers. If you have a Intel machine that
-	  has an audio controller with a DSP and I2S or DMIC port, then
-	  enable this option by saying Y
-
-	  Note that the answer to this question doesn't directly affect the
-	  kernel: saying N will just cause the configurator to skip all
-	  the questions about Intel ASoC machine drivers.
-
-if SND_SOC_INTEL_MACH
+menu "Machine drivers"
 
 if SND_SST_ATOM_HIFI2_PLATFORM_PCI
 
@@ -269,4 +257,4 @@ config SND_SOC_INTEL_KBL_RT5663_RT5514_MAX98927_MACH
           If unsure select "N".
 endif ## SND_SOC_INTEL_SKYLAKE
 
-endif
+endmenu
