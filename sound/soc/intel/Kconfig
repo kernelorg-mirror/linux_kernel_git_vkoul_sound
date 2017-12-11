@@ -107,10 +107,10 @@ config SND_SOC_INTEL_SKYLAKE
 	  GeminiLake or CannonLake platform with the DSP enabled in the BIOS
 	  then enable this option by saying Y or m.
 
-endif ## SND_SOC_INTEL_SST_TOPLEVEL
-
-# ASoC codec drivers
+# ASoC machine drivers
 source "sound/soc/intel/boards/Kconfig"
+
+endif ## SND_SOC_INTEL_SST_TOPLEVEL
 
 # configs common to SST and SOF to use ACPI matching tables and helpers
 
