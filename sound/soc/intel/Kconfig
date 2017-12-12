@@ -2,6 +2,7 @@ config SND_SOC_INTEL_SST_TOPLEVEL
 	bool "Intel ASoC SST drivers"
 	default y
 	depends on X86 || COMPILE_TEST
+	select SND_SOC_INTEL_MACH
 	help
 	  Intel ASoC SST Platform Drivers. If you have a Intel machine that
 	  has an audio controller with a DSP and I2S or DMIC port, then

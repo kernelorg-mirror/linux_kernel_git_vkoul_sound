@@ -1,5 +1,5 @@
 menuconfig SND_SOC_INTEL_MACH
-	bool "Machine drivers"
+	bool "Intel Machine drivers"
 	depends on SND_SOC_INTEL_SST_TOPLEVEL
 	help
          Intel ASoC Machine Drivers. If you have a Intel machine that
